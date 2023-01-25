@@ -36,7 +36,187 @@
   <button class="wish-button">Хочу сюда!</button>
 </header>
 
-<main class="main-index">
+<main class="main-inner">
+  <header class="inner-header">
+    <h1 class="inner-header-title">Гостиницы Седоны</h1>
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link" href="index.html">Домой</a>
+      </li>
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link" href="index.html">Далее</a>
+      </li>
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link" href="index.html">Гостиницы</a>
+      </li>
+    </ul>
+  </header>
+
+
+
+ <div class="filter-form"></div>
+  <form action="/echo" method="POST">
+    <fieldset class="filter-form__col">
+      <legend>Инфраструктура:</legend>
+
+        <input type="checkbox" id="check1">
+        <label for="check1">Бассейн</label>
+
+        <input type="checkbox" id="check2">
+        <label for="check2">Парковка</label>
+
+        <input type="checkbox" id="check3">
+        <label for="check3">Wi-fi</label>
+    </fieldset>
+
+      <fieldset class="catalog-filter-group">
+        <legend class="catalog-filter-title">Тип жилья:</legend>
+
+        <input type="checkbox" id="check4">
+        <label for="check4">Гостиница</label>
+
+        <input type="checkbox" id="check5">
+        <label for="check5">Мотель</label>
+
+        <input type="checkbox" id="check6">
+        <label for="check6">Апартаменты</label>
+      </fieldset>
+
+      <fieldset class="catalog-filter-group">
+        <legend class="catalog-filter-title">Стоимость,Р:</legend>
+        <div class="range">
+        <div class="range_fields">
+        <div class="range__filed">
+          <label for="rangel">От</label>
+          <input type="text" id="rangel">
+        </div>
+        <div class="range__filed">
+          <label for="range2">До</label>
+          <input type="text" id="range2">
+      </div>
+        </div>
+         <div class="range_bar">
+        <div class="range_scale">Шкала</div>
+        <button class="range__btn range__btn--from" type="button">От</button>
+        <button class="range__btn range__btn--to" type="button">До</button>
+        </div>
+        </div>
+        <button class="btn btn--transparent" type="submit">Применить</button>
+      </fieldset>
+    </form>
+
+    <div class="hotel-sort">
+      <ul class="hotel-sort__list">
+        <li class="hotel-sort__item">
+          <div class="hotel-sort__title">Найдено 38:</div>
+        </li>
+        <li class="hotel-sort__item">Сортировка</li>
+        <li class="hotel-sort__item">
+       <a href="#" class="hotel-sort__link hotel-sort__link--active">По цене</a>
+    </li>
+    <li class="hotel-sort__item">
+      <a href="#" class="hotel-sort__link">По типу</a>
+    </li>
+    <li class="hotel-sort__item">
+      <a href="#" class="hotel-sort__link">По рейтингу</a>
+      </li>
+      <li class="hotel-sort__item">
+      <a href="#" class="hotel-sort__link hotel-sort__link--icon">
+        <svg></svg>
+      </a>
+      <a href="#" class="hotel-sort__link hotel-sort__link--icon">
+        <svg></svg>
+      </a>
+    </li>
+      </ul>
+    </div>
+
+    <div class="hotel">
+      <div class="hotel__picture">
+        <img src="img.jpg" alt="" width="200" height="100">
+      </div>
+      <div class="hotel__content">
+        <h2 class="hotel__title">Amara resort & spa</h2>
+        <div class=hotel__block>
+          <span>Гостиница</span>
+          <a href="#" class="btn btn--brown">Подробнее</a>
+        </div>
+        <div class="hotel__block">
+          <span>От 4000 Р</span>
+          <a href="#" class="btn btn--blue">В Избранное</a>
+        </div>
+      </div>
+      <div class="hotel__rate">
+        <div class="hotel__stars hotel__stras--five">Звёзды</div>
+        <div class="hotel__rate-text">Рейтинг 8,5</div>
+      </div>
+    </div>
+
+    <div class="hotel">
+      <div class="hotel__picture">
+        <img src="img.jpg" alt="" width="200" height="100">
+      </div>
+      <div class="hotel__content">
+        <h2 class="hotel__title">Villas at Poco Diablo</h2>
+        <div class=hotel__block>
+          <span>Гостиница</span>
+          <a href="#" class="btn btn--brown">Подробнее</a>
+        </div>
+        <div class="hotel__block">
+          <span>От 5000 Р</span>
+          <a href="#" class="btn btn--blue">В Избранное</a>
+        </div>
+      </div>
+      <div class="hotel__rate">
+        <div class="hotel__stars hotel__stras--five">Звёзды</div>
+        <div class="hotel__rate-text">Рейтинг 9,2</div>
+      </div>
+    </div>
+
+    <div class="hotel">
+      <div class="hotel__picture">
+        <img src="img.jpg" alt="" width="200" height="100">
+      </div>
+      <div class="hotel__content">
+        <h2 class="hotel__title">Desert Quail Inn</h2>
+        <div class=hotel__block>
+          <span>Гостиница</span>
+          <a href="#" class="btn btn--brown">Подробнее</a>
+        </div>
+        <div class="hotel__block">
+          <span>От 2500 Р</span>
+          <a href="#" class="btn btn--blue">В Избранное</a>
+        </div>
+      </div>
+      <div class="hotel__rate">
+        <div class="hotel__stars hotel__stras--five">Звёзды</div>
+        <div class="hotel__rate-text">Рейтинг 6,9</div>
+      </div>
+    </div>
+
+    <div class="hotel">
+      <div class="hotel__picture">
+        <img src="img.jpg" alt="" width="200" height="100">
+      </div>
+      <div class="hotel__content">
+        <h2 class="hotel__title">GreenTree Inn</h2>
+        <div class=hotel__block>
+          <span>Гостиница</span>
+          <a href="#" class="btn btn--brown">Подробнее</a>
+        </div>
+        <div class="hotel__block">
+          <span>От 1500 Р</span>
+          <a href="#" class="btn btn--blue">В Избранное</a>
+        </div>
+      </div>
+      <div class="hotel__rate">
+        <div class="hotel__stars hotel__stras--five">Звёзды</div>
+        <div class="hotel__rate-text">Рейтинг 5</div>
+      </div>
+    </div>
+
+
+
   <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
   <img class="inscription-logo" src="https://dummyimage.com/458x352/c0c0c0" alt="Надпись">
 <section class="advantages">
