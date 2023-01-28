@@ -28,18 +28,26 @@
         <a class="secondary-navigation-link" href="#">
           <span class="visually-hidden">Поиск</span>
         </a>
-        <ul class="breadcrumbs-list">
+        <a class="secondary-navigation-link" href="#">
+          <span class="visually-hidden">Избранное</span>
+        </a>
+      </nav>
+      <button class="wish-button">Хочу сюда!</button>
+    </header>
+
+    <main class="main-inner">
+      <section class="inner-header">
+        <form action="#" method="get">
+        <h1 class="inner-header-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">На Главную</a>
+          </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
-      </nav>
-    </header>
 
-
-    <main class="main-inner">
-      <div class="filter-form"></div>
-      <form action="#" method="get">
 
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -105,7 +113,8 @@
         </fieldset>
         <button class="btn btn--transparent" type="submit">Применить</button>
         <button class="btn btn--transparent" type="reset">Сбросить</button>
-      </form>
+        </form>
+      </section>
 
 
       <section class="product-catalog">
@@ -222,6 +231,7 @@
         <li class="pagination-item">
           <a class="pagination-link" href="#">4</a>
         </li>
+
         <li class="pagination-item">
           <a class="pagination-link" href="#">10</a>
         </li>
