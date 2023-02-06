@@ -51,10 +51,10 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  color: inherit;
   text-align: center;
   text-decoration: none;
   text-transform: capitalize;
+  color: #000000;
 }
 
 .button-navigation {
@@ -98,6 +98,11 @@ font-weight: 700;
 font-size: 24px;
 line-height: 28px;
 text-transform: uppercase;
+}
+
+.advantages-description-small,
+.services-description-small {
+  color: #333333;
 }
 
 .advantages-text,
@@ -154,11 +159,12 @@ text-transform: uppercase;
   }
 
 
+
   .page-footer a {
     color:#000000;
   }
 
-  .page-footer-title {
+  .page-footer-big-title {
     font-family: "PT Sans";
     font-size: 30px;
     line-height: 36px;
@@ -167,7 +173,13 @@ text-transform: uppercase;
     text-transform: uppercase;
   }
 
-
+  .field {
+    width: 452px;
+    min-width: 52px;
+    border-radius: 4px;
+    border: 0;
+    background-color: #f2f2f2;
+  }
 
 
   .footer-contacts-address {
@@ -195,6 +207,11 @@ text-transform: uppercase;
     text-transform: uppercase;
   }
 
+
+
+
+
+
   .inner-header-title {
     font-size: 60px;
     line-height: 78px;
@@ -203,12 +220,21 @@ text-transform: uppercase;
 
 
 .main-inner {
-  background-color: #98d4f9;
   background-image: url("../images/catalog/filter.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #ffffff;
 }
+
+.button-filter {
+background-color: #82B3D3;
+width: 191px;
+}
+
+.button-filter-reset {
+  background-color: transparent;
+}
+
 
 .button {
   height: 36px;
@@ -220,7 +246,6 @@ text-transform: uppercase;
   font-weight: 700;
   text-align: center;
   color: #ffffff;
-  background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -230,6 +255,11 @@ text-transform: uppercase;
 .button-catalog-in-favorites {
   width: 140px;
 }
+
+.button-catalog-more {
+  background-color: #756157;
+}
+
 
 .button-catalog-to-favorites{
   background-color: #82B3D3;
@@ -277,9 +307,13 @@ text-transform: uppercase;
     line-height: 36px;
     font-weight: 700;
     color: #000000;
+    text-transform: uppercase;
   }
 
 .select-control {
+  width: 292px;
+  height: 49px;
+  border-radius: 4px;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
@@ -294,14 +328,32 @@ text-transform: uppercase;
   color: #000000;
 }
 
-.hotel-block {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  color: #ffffff;
+.hotel-card-price,
+.hotel-card-type {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
 }
 
 
+.hotel__rate-text {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.button-catalog-more,
+.button-catalog-to-favorites,
+.button-catalog-in-favorites {
+  width: 140px;
+}
+
+.button-catalog-to-favorites {
+  background-color: #82B3D3;
+}
 
 .pagination-link {
   text-decoration: none;
@@ -321,10 +373,83 @@ text-transform: uppercase;
   background-color: #f2f2f2;
 }
 
-.pagination-hidden {
+.pagination-link-hidden {
   color: #000000;
   background-color: #ffffff;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
 }
+
+
+
+
+
+
+.catalog-footer {
+  color:#000000;
+  background-color: #ffffff;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  }
+
+.catalog-footer-description {
+  color: #333333;
+}
+
+
+  .catalog-footer a {
+    color:#000000;
+  }
+
+  .catalog-footer-title {
+    font-family: "PT Sans";
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color:#000000;
+    text-transform: uppercase;
+  }
+
+.catalog-field {
+  width: 452px;
+  min-width: 52px;
+  border-radius: 4px;
+  border: 0;
+  background-color: #f2f2f2;
+}
+
+.catalog-button {
+  width: 232px;
+  height: 52px;
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
+}
+
+  .catalog-footer-contacts-address {
+    font-style: normal;
+  }
+
+
+  .catalog-footer-contacts-address-phone {
+    font-family: "PT Sans", sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .catalog-footer-contacts-map-link {
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }

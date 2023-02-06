@@ -112,8 +112,8 @@
           <input class="conteol-input-max" type="number" name="min-price" value="9000">
           <input class="conteol-input" type="range" name="price-range">
         </fieldset>
-        <button class="btn btn--transparent" type="submit">Применить</button>
-        <button class="btn btn--transparent" type="reset">Сбросить</button>
+        <button class="button button-filter" type="submit">Применить</button>
+        <button class="button button-filter button-filter-reset">Сбросить</button>
         </form>
       </section>
 
@@ -135,14 +135,14 @@
           <img src="images/catalog/amara-resort.jpg" alt="Вид с горы на небо" width="300" height="212">
         </div>
         <div class="hotel__content">
-          <h2 class="hotel__title">Amara resort & spa</h2>
-          <div class=hotel__block>
-            <span>Гостиница</span>
-            <a href="#" class="btn btn--brown">Подробнее</a>
+          <h2 class="hotel-title">Amara resort & spa</h2>
+          <div class=hotel-block>
+            <p class="hotel-card-type">Гостиница</p>
+            <a class="button button-catalog-more" href="#">Подробнее</a>
           </div>
           <div class="hotel__block">
-            <span>От 4000 Р</span>
-            <a href="#" class="btn btn--blue">В Избранное</a>
+            <p class="hotel-card-price">От 4000 Р</p>
+            <button class="button button-catalog-to-favorites">В Избранное</button>
           </div>
         </div>
         <div class="hotel__rate">
@@ -156,14 +156,14 @@
           <img src="images/catalog/vilass.jpg" alt="Радуга и цветущая гора" width="300" height="212">
         </div>
         <div class="hotel__content">
-          <h2 class="hotel__title">Villas at Poco Diablo</h2>
-          <div class=hotel__block>
-            <span>Гостиница</span>
-            <a href="#" class="btn btn--brown">Подробнее</a>
+          <h2 class="hotel-title">Villas at Poco Diablo</h2>
+          <div class=hotel-block>
+            <p class="hotel-card-type">Гостиница</p>
+            <a class="button button-catalog-more" href="#">Подробнее</a>
           </div>
           <div class="hotel__block">
-            <span>От 5000 Р</span>
-            <a href="#" class="btn btn--green">В Избранном</a>
+            <p class="hotel-card-price">От 4000 Р</p>
+            <button class="button button-catalog-in-favorites">В Избранном</button>
           </div>
         </div>
         <div class="hotel__rate">
@@ -177,14 +177,14 @@
           <img src="images/catalog/desert-quial.jpg" alt="Гора под красивым небом" width="300" height="212">
         </div>
         <div class="hotel__content">
-          <h2 class="hotel__title">Desert Quail Inn</h2>
-          <div class=hotel__block>
-            <span>Гостиница</span>
-            <a href="#" class="btn btn--brown">Подробнее</a>
+          <h2 class="hotel-title">Desert Quail Inn</h2>
+          <div class=hotel-block>
+            <p class="hotel-card-type">Гостиница</p>
+            <a class="button button-catalog-more" href="#">Подробнее</a>
           </div>
           <div class="hotel__block">
-            <span>От 2500 Р</span>
-            <a href="#" class="btn btn--blue">В Избранное</a>
+            <p class="hotel-card-price">От 4000 Р</p>
+            <button class="button button-catalog-to-favorites">В Избранное</button>
           </div>
         </div>
         <div class="hotel__rate">
@@ -198,14 +198,14 @@
           <img src="images/catalog/greentree.jpg" alt="Звёзное небо и гора" width="300" height="212">
         </div>
         <div class="hotel__content">
-          <h2 class="hotel__title">GreenTree Inn</h2>
-          <div class=hotel__block>
-            <span>Гостиница</span>
-            <a href="#" class="btn btn--brown">Подробнее</a>
+          <h2 class="hotel-title">GreenTree Inn</h2>
+          <div class=hotel-block>
+            <p class="hotel-card-type">Гостиница</p>
+            <a class="button button-catalog-more" href="#">Подробнее</a>
           </div>
           <div class="hotel__block">
-            <span>От 1500 Р</span>
-            <a href="#" class="btn btn--blue">В Избранное</a>
+            <p class="hotel-card-price">От 4000 Р</p>
+            <button class="button button-catalog-to-favorites">В Избранное</button>
           </div>
         </div>
         <div class="hotel__rate">
@@ -227,7 +227,7 @@
           <a class="pagination-link" href="#">4</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination hidden">...</a>
+          <a class="pagination-link-hidden">...</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">10</a>
@@ -236,37 +236,35 @@
     </main>
 
 
-    <footer class="page-footer" data-test="footer">
+    <footer class="catalog-footer" data-test="footer">
       <section class="newsletter">
-        <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-        <p class="page-footer-description">Только полезная информация и никаого спама, честное бойскаутское</p>
+        <h2 class="catalog-footer-title">Подпишитесь на рассылку</h2>
+        <p class="catalog-footer-description">Только полезная информация и никаого спама, честное бойскаутское</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newsletter-email">Email</label>
-          <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
+          <input class="catalog-field" placeholder="email@example.com" type="email" name="newsletter-email"
             id="newsletter-email" required>
-          <button class="button newsletter-button" type="submit">
-            <span class="visually-hidden">Подписаться</span>
-          </button>
+            <button class="button catalog-button" type="submit">Подписаться</button>
         </form>
       </section>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="footer-social-link" href="#">
+      <ul class="catalog-footer-social-list">
+        <li class="catalog-footer-social-item">
+          <a class="catalog-footer-social-link" href="#">
             <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
-        <li class="footer-social-item">
-          <a class="footer-social-link" href="#">
+        <li class="catalog-footer-social-item">
+          <a class="catalog-footer-social-link" href="#">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
-        <li class="footer-social-item">
-          <a class="footer-social-link" href="#">
+        <li class="catalog-footer-social-item">
+          <a class="catalog-footer-social-link" href="#">
             <span class="visually-hidden">YouTube</span>
           </a>
         </li>
       </ul>
-      <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 812 812-12-12</a>
+      <a class="catalog-footer-contacts-address-phone" href="tel:+78128121212">+7 812 812-12-12</a>
       <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="htmlacademy-logo" alt="логотип академии"
         width="114" height="32" src="images/html-academy.svg"></a>
     </footer>
