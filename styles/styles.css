@@ -22,7 +22,33 @@ body {
   font-weight: 400;
   color: #333333;
   background-color: #f2f2f2;
+  margin: 0;
 }
+
+.container {
+  background-color: #ffffff;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.main-header {
+  display: flex;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 
 .wish-button {
   font-family: "PT Sans", sans-serif;
@@ -46,6 +72,32 @@ body {
   color:#000000;
 }
 
+
+/* Nav */
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation-list {
+  width: 420px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
+}
+
+
+
 .navigation-link {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
@@ -61,6 +113,8 @@ body {
 width: 160px;
 }
 
+
+
 .hero {
   background-image: url("../images/icon-zigzag.svg"), url("../images/background.jpg");
   background-size: 100% auto, 100% auto;
@@ -71,6 +125,10 @@ width: 160px;
   padding: 60px;
 }
 
+
+
+
+
 .main-index {
   color:#000000;
   background-color:#ffffff;
@@ -78,6 +136,17 @@ width: 160px;
 }
 
 
+
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+/* advantages */
 
 
 .advantages-big-title,
@@ -91,6 +160,14 @@ width: 160px;
 }
 
 
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  text-align: center;
+}
 
 .advantages-title,
 .services-title {
@@ -115,7 +192,32 @@ text-transform: uppercase;
 }
 
 
+.advantages-item {
+  text-align: center;
+  display: flex;
+  min-height: 385px;
+}
+
+
+.advantages-item-square,
+.advantages-item-tourist {
+  width: 400px;
+  height: 385px;
+  color: #000000;
+  background-color: rgba(131,179,211,0.12);
+}
+
+.advantages-item-road {
+width: 400px;
+height: 385px;
+color: #000000;
+background-color: rgba(131,179,211,0.2);
+}
+
+
+
 .advantages-item-blue {
+  display: flex;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -132,11 +234,42 @@ text-transform: uppercase;
   line-height: 21px;
 }
 
+/* Services*/
 
-.services-price {
-  color:#000000;
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
+.services-item {
+  text-align: center;
+  display: flex;
+  min-height: 385px;
+}
+
+
+.services-item-housing,
+.services-item-souvenirs {
+background-color: rgba(131,179,211,0.2);
+color: #000000;
+width: 400px;
+height: 385px;
+}
+
+.services-item-food {
+background-color: rgba(131,179,211,0.12);
+color: #000000;
+width: 400px;
+height: 385px;
+}
+
+
+
+/* Label */
 
 .form-label {
   font-size: 20px;
@@ -145,7 +278,12 @@ text-transform: uppercase;
   text-transform: uppercase;
 }
 
-
+.services-button {
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: #756157;
+}
 
 .page-footer {
   color: #ffffff;
@@ -206,6 +344,7 @@ text-transform: uppercase;
     text-decoration: underline;
     text-transform: uppercase;
   }
+
 
 
 
