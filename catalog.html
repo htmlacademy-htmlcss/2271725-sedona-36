@@ -9,39 +9,46 @@
   </head>
 
   <body>
-    <header class="main-header">
-      <a class="logo-link" href="#"><img class="main-logo" src="images/brand-sedona.svg" width="140" height="70" alt="city of sedona"></a>
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-      </nav>
-      <nav>
-        <a class="secondary-navigation-link" href="#">
-          <span class="visually-hidden">Поиск</span>
-        </a>
-        <a class="secondary-navigation-link" href="#">
-          <span class="visually-hidden">Избранное</span>
-          <span class="notification-badge">12</span>
-        </a>
-      </nav>
-      <button class="wish-button">Хочу сюда!</button>
-    </header>
+    <div class="container"></div>
+      <header class="main-header">
+        <a class="logo" href="index.html"><img class="page-header-logo" src="images/brand-sedona.svg" width="140"
+            height="70" alt="Логотип Седона-небольшой городок в Аризоне"></a>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item">
+              <a class="secondary-navigation-link" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="secondary-navigation-link" href="#">
+                <span class="visually-hidden">Избранное</span>
+                <span class="notification-badge">12</span>
+              </a>
+            </li>
+            <button class="wish-button">Хочу сюда!</button>
+          </ul>
+        </nav>
+      </header>
 
     <main class="main-inner">
       <section class="inner-header">
+        <div class="filter-container"></div>
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">На Главную</a>
+            <a class="breadcrumbs-link" href="index.html">На Главную</a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
@@ -111,8 +118,10 @@
           <input class="conteol-input-max" type="number" name="min-price" value="9000">
           <input class="conteol-input" type="range" name="price-range">
         </fieldset>
+        <div class="filter-button-wrapper">
         <button class="button button-filter" type="submit">Применить</button>
         <button class="button button-filter button-filter-reset">Сбросить</button>
+        </div>
         </form>
       </section>
 
@@ -129,7 +138,10 @@
         <a class="button" href="#"></a>
       </section>
       </div>
+
+
       <div class="hotel">
+        <div class="hotel-card-item">
         <div class="hotel__picture">
           <img src="images/catalog/amara-resort.jpg" alt="Вид с горы на небо" width="300" height="212">
         </div>
@@ -149,8 +161,10 @@
           <div class="hotel__rate-text">Рейтинг 8,5</div>
         </div>
       </div>
+      </div>
 
       <div class="hotel">
+        <div class="hotel-card-item">
         <div class="hotel__picture">
           <img src="images/catalog/vilass.jpg" alt="Радуга и цветущая гора" width="300" height="212">
         </div>
@@ -161,7 +175,7 @@
             <a class="button button-catalog-more" href="#">Подробнее</a>
           </div>
           <div class="hotel__block">
-            <p class="hotel-card-price">От 4000 Р</p>
+            <p class="hotel-card-price">От 5000 Р</p>
             <button class="button button-catalog-in-favorites">В Избранном</button>
           </div>
         </div>
@@ -169,9 +183,11 @@
           <div class="hotel__stars hotel__stars--five">Звёзды</div>
           <div class="hotel__rate-text">Рейтинг 9,2</div>
         </div>
+        </div>
       </div>
 
       <div class="hotel">
+        <div class="hotel-card-item">
         <div class="hotel__picture">
           <img src="images/catalog/desert-quial.jpg" alt="Гора под красивым небом" width="300" height="212">
         </div>
@@ -182,7 +198,7 @@
             <a class="button button-catalog-more" href="#">Подробнее</a>
           </div>
           <div class="hotel__block">
-            <p class="hotel-card-price">От 4000 Р</p>
+            <p class="hotel-card-price">От 2500 Р</p>
             <button class="button button-catalog-to-favorites">В Избранное</button>
           </div>
         </div>
@@ -190,9 +206,11 @@
           <div class="hotel__stars hotel__stars--five">Звёзды</div>
           <div class="hotel__rate-text">Рейтинг 6,9</div>
         </div>
+        </div>
       </div>
 
       <div class="hotel">
+        <div class="hotel-card-item">
         <div class="hotel__picture">
           <img src="images/catalog/greentree.jpg" alt="Звёзное небо и гора" width="300" height="212">
         </div>
@@ -203,7 +221,7 @@
             <a class="button button-catalog-more" href="#">Подробнее</a>
           </div>
           <div class="hotel__block">
-            <p class="hotel-card-price">От 4000 Р</p>
+            <p class="hotel-card-price">От 1500 Р</p>
             <button class="button button-catalog-to-favorites">В Избранное</button>
           </div>
         </div>
@@ -211,8 +229,11 @@
           <div class="hotel__stars hotel__stars--five">Звёзды</div>
           <div class="hotel__rate-text">Рейтинг 5</div>
         </div>
+        </div>
       </div>
+
       <ol class="pagination">
+        <div class="pagination-wraper">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
         </li>
@@ -231,6 +252,7 @@
         <li class="pagination-item">
           <a class="pagination-link" href="#">10</a>
         </li>
+        </div>
       </ol>
     </main>
 
