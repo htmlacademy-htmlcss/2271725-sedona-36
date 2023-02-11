@@ -290,13 +290,23 @@ height: 385px;
 
 .page-footer {
   color: #ffffff;
-  background-image: url("../images/subscribe.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   text-align: center;
+  }
+
+
+
+.newsletter {
+  background-image: url("../images/subscribe.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  min-height: 415px;
+  padding-left: 258px;
+  padding-top: 96px;
+  padding-right: 258px;
+  padding-bottom: 104px;
   }
 
 
@@ -349,6 +359,11 @@ height: 385px;
   }
 
 
+  .htmlacademy-link {
+    width: 115px;
+    margin-left: auto;
+  }
+
 /* catalog - filter */
 
 
@@ -362,15 +377,14 @@ height: 385px;
 
 
 
-.main-inner {
-  background-color: #98d4f9;
+.inner-header {
+  background-color: #82B3D3;
   background-image: url("../images/catalog/filter.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
+  padding: 35px 70px 70px;
 }
-
-
 
 .button-filter {
 background-color: #82B3D3;
@@ -382,13 +396,11 @@ min-width: 191px;
 }
 
 
-/* catalog - sorting */
+/* catalog - product  */
 
-.sorting-container {
+.product-catalog {
   display: flex;
-  margin: 0 auto;
-  padding: 0;
-  width: 1060px;
+  padding: 40px 70px 0 70px;
 }
 
 .hotels-fond {
@@ -397,8 +409,6 @@ min-width: 191px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  margin-left: 70px;
-  margin-top: 50px;
 }
 
 
@@ -476,11 +486,7 @@ min-width: 191px;
     font-weight: 400;
   }
 
-  .filter-container {
-    padding: 0;
-    margin: 35px 70px 70px;
-    width: 1060px;
-  }
+
 
   .catalog-filter {
     display: flex;
@@ -596,21 +602,18 @@ min-width: 191px;
 /* pagination */
 
 .pagination {
-  width: 1060px;
-  padding: 0;
-  margin: 0 auto;
-}
-
-
-.pagination-wrapper {
+  padding: 0 70px;
   display: flex;
-  width: 400px;
-  justify-content: space-between;
+list-style: none;
 }
 
 
 .pagination-link {
   display: block;
+}
+
+.pagination-item {
+  margin-right: 4px;
 }
 
 .pagination-link {
@@ -640,6 +643,9 @@ min-width: 191px;
 }
 
 
+/* footer */
+
+
 .catalog-footer {
   color:#000000;
   background-color: #ffffff;
@@ -648,6 +654,8 @@ min-width: 191px;
   font-weight: 400;
   text-align: center;
   }
+
+
 
 .catalog-footer-description {
   color: #333333;
