@@ -43,7 +43,10 @@ body {
 }
 
 
+
 .main-container {
+  padding-top: 51px;
+  padding-bottom: 82px;
   flex-grow: 1;
 }
 
@@ -96,11 +99,14 @@ body {
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 420px;
   margin: 0;
   padding: 0;
   text-decoration: none;
   color: inherit;
+  list-style-type: none;
 }
 
 .navigation-user {
@@ -109,8 +115,9 @@ body {
 }
 
 
-
 .navigation-link {
+  display: block;
+  padding: 24px 19px;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
@@ -120,6 +127,12 @@ body {
   text-transform: capitalize;
   color: #000000;
 }
+
+.navigation-list .navigation-user {
+min-width: 16px;
+min-height: 22px;
+}
+
 
 .button-navigation {
   width: 160px;
@@ -136,6 +149,7 @@ body {
   text-align: center;
   padding: 60px;
 }
+
 
 *,
 *::before,
@@ -154,6 +168,8 @@ body {
 
 
 .logo {
+  padding-left: 70px;
+  padding-right: 28px;
   display: block;
   margin: 0 auto;
 }
@@ -172,10 +188,17 @@ body {
   color: #000000;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.advantages-grid {
+  padding: 85px 102px 85px 102px;
 }
 
 
+
 .advantages-list {
+  list-style-type: none;
   display: flex;
   justify-content: space-between;
   padding: 0;
@@ -191,6 +214,20 @@ body {
   line-height: 28px;
   text-transform: uppercase;
 }
+
+
+.advantages-title {
+  margin-top: 0;
+  margin-bottom: 62px;
+}
+
+
+
+.advantages-description,
+.services-description {
+  margin: 0;
+}
+
 
 .advantages-description-small,
 .services-description-small {
@@ -216,6 +253,7 @@ body {
 
 .advantages-item-square,
 .advantages-item-tourist {
+  padding: 85px 102px 85px 102px;
   width: 400px;
   height: 385px;
   color: #000000;
@@ -223,6 +261,7 @@ body {
 }
 
 .advantages-item-road {
+  padding: 85px 102px 85px 102px;
   width: 400px;
   height: 385px;
   color: #000000;
@@ -253,6 +292,7 @@ body {
 
 
 .services-list {
+  list-style-type: none;
   display: flex;
   justify-content: space-between;
   padding: 0;
@@ -267,8 +307,16 @@ body {
 }
 
 
+
+.services-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
 .services-item-housing,
 .services-item-souvenirs {
+  margin-bottom: 30px;
+  padding: 85px 81px 85px 81px;
   background-color: rgba(131, 179, 211, 0.2);
   color: #000000;
   width: 400px;
@@ -276,12 +324,19 @@ body {
 }
 
 .services-item-food {
+  margin-bottom: 30px;
+  padding: 85px 81px 85px 81px;
   background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
   width: 400px;
   height: 385px;
 }
 
+
+
+.services-interested {
+  padding: 96px 304px 96px 304px;
+}
 
 
 /* Label */
@@ -375,6 +430,7 @@ body {
   text-decoration: underline;
   text-transform: uppercase;
 }
+
 
 
 .htmlacademy-link {
@@ -569,6 +625,8 @@ body {
   margin: 0 auto;
   padding: 0;
   justify-content: space-between;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 
