@@ -93,6 +93,7 @@ body {
 .navigation {
   display: flex;
   width: 1200px;
+  height: 64px;
   margin: 0 auto;
   text-decoration: none;
   color: inherit;
@@ -117,7 +118,7 @@ body {
 
 .navigation-link {
   display: block;
-  padding: 24px 19px;
+  padding: 16px 20px 16px 20px;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
@@ -138,6 +139,12 @@ min-height: 22px;
   width: 160px;
 }
 
+
+.wish-button {
+  margin-top: 14px;
+  margin-right: 70px;
+  margin-bottom: 14px;
+}
 
 
 .hero {
@@ -419,6 +426,10 @@ min-height: 22px;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+  padding-left: 448px;
+  padding-top: 45px;
+  padding-right: 420px;
+  padding-bottom: 35px;
 }
 
 .footer-contacts-map-link {
@@ -431,12 +442,32 @@ min-height: 22px;
   text-transform: uppercase;
 }
 
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+.footer-social-item {
+  width: 47px;
+  height: 40px;
+}
 
 
 .htmlacademy-link {
-  width: 115px;
-  margin-left: auto;
+  margin-left: 1015px;
+  margin-top: 48px;
+  margin-right: 70px;
+  margin-bottom: 38px;
+
 }
+
+
+
+
 
 /* catalog - filter */
 
@@ -446,7 +477,8 @@ min-height: 22px;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
-  margin: 0;
+  margin-top: 35px;
+  margin-left: 70px;
 }
 
 
@@ -537,7 +569,15 @@ min-height: 22px;
   color: #FFFFFF;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 121px;
+  margin-left: 70px;
+  margin-right: 1016px;
+  margin-bottom: 270px;
+
 }
+
 
 
 .breadcrumbs-link {
@@ -548,6 +588,7 @@ min-height: 22px;
 
 
 .catalog-filter-title {
+  padding-top: 182px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -568,6 +609,9 @@ min-height: 22px;
 
 
 .catalog-filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   border: 0;
@@ -790,4 +834,13 @@ min-height: 22px;
   color: #ffffff;
   text-decoration: underline;
   text-transform: uppercase;
+}
+
+
+.catalog-footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
