@@ -444,6 +444,8 @@ min-height: 22px;
 
 .footer-site {
   display: flex;
+  justify-content: space-between;
+  padding: 40px 70px 30px 70px;
 }
 
 
@@ -651,14 +653,13 @@ min-height: 22px;
 }
 
 .hotel {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
   width: 1060px;
   margin: 0 auto;
   padding: 0;
-  justify-content: space-between;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 
 
