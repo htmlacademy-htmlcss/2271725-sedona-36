@@ -73,6 +73,10 @@ body {
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 8px 34px 8px 34px;
+  margin-top: 14px;
+  margin-right: 70px;
+  margin-bottom: 14px;
 }
 
 
@@ -87,6 +91,8 @@ body {
 
 
 /* Nav */
+
+
 
 .navigation {
   display: flex;
@@ -137,11 +143,20 @@ min-height: 22px;
   width: 160px;
 }
 
+.navigation-user .navigation-item:nth-child(1) .navigation-link{
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-.wish-button {
-  margin-top: 14px;
-  margin-right: 70px;
-  margin-bottom: 14px;
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #dbdbdb;
 }
 
 
@@ -183,6 +198,8 @@ min-height: 22px;
 
 
 /* advantages */
+
+
 
 
 .advantages-big-title,
@@ -356,6 +373,7 @@ min-height: 22px;
   line-height: 36px;
   color: #ffffff;
   background-color: #756157;
+  padding: 8px 50px 8px 50px;
 }
 
 
@@ -370,6 +388,11 @@ min-height: 22px;
   text-align: center;
 }
 
+
+
+.catalog-button {
+  padding: 8px 50px 8px 50px;
+}
 
 
 .newsletter {
@@ -536,24 +559,29 @@ min-height: 22px;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button-catalog-more,
 .button-catalog-to-favorites,
 .button-catalog-in-favorites {
+  margin-bottom: 16px;
   width: 140px;
 }
 
 .button-catalog-more {
+  padding: 8px 26px 8px 26px;
   background-color: #756157;
 }
 
 
 .button-catalog-to-favorites {
+  padding: 8px 20px 8px 20px;
   background-color: #82B3D3;
 }
 
 .button-catalog-in-favorites {
+  padding: 8px 18px 8px 18px;
   background-color: #7DB54F;
 }
 
@@ -670,20 +698,21 @@ min-height: 22px;
   width: 340px;
 }
 
-.hotel__content {
+.hotel-content {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 }
 
 
-.hotel__rate {
+.hotel-rate {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 }
 
 .hotel-title {
+  margin-bottom: 16px;
   width: 100%;
   font-size: 24px;
   line-height: 28px;
@@ -701,13 +730,14 @@ justify-content: space-between;
 }
 
 
-.hotel__rate-text {
+.hotel-rate-text {
   background-color: #F2F2F2;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
+  padding: 9px 22px 8px 23px;
 }
 
 .button-catalog-more,
