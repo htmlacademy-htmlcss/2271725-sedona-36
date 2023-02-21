@@ -121,6 +121,7 @@ body {
 
 
 .navigation-link {
+  position: relative;
   display: block;
   padding: 16px 20px 16px 20px;
   font-family: "PT Sans", sans-serif;
@@ -139,24 +140,20 @@ min-height: 22px;
 }
 
 
+
 .button-navigation {
   width: 160px;
 }
 
-.navigation-user .navigation-item:nth-child(1) .navigation-link{
-  background-image: url("../images/search.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 .navigation-icon {
-  position: absolute;
+  list-style-type:none;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   margin: auto;
-  fill: #dbdbdb;
+  fill: #000000;
 }
 
 
@@ -212,6 +209,8 @@ min-height: 22px;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+
+
 
 .advantages-grid {
   padding: 85px 102px 85px 102px;
@@ -517,6 +516,8 @@ min-height: 22px;
 
 /* catalog - product  */
 
+
+
 .product-catalog {
   display: flex;
   padding: 40px 70px 0 70px;
@@ -569,6 +570,7 @@ min-height: 22px;
   width: 140px;
 }
 
+
 .button-catalog-more {
   padding: 8px 26px 8px 26px;
   background-color: #756157;
@@ -584,6 +586,9 @@ min-height: 22px;
   padding: 8px 18px 8px 18px;
   background-color: #7DB54F;
 }
+
+
+
 
 .breadcrumbs {
   font-size: 16px;
@@ -614,6 +619,7 @@ min-height: 22px;
 
 
 .catalog-filter-item {
+  list-style-type:none;
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
@@ -740,15 +746,6 @@ justify-content: space-between;
   padding: 9px 22px 8px 23px;
 }
 
-.button-catalog-more,
-.button-catalog-to-favorites,
-.button-catalog-in-favorites {
-  width: 140px;
-}
-
-.button-catalog-to-favorites {
-  background-color: #82B3D3;
-}
 
 
 
@@ -762,15 +759,12 @@ justify-content: space-between;
 }
 
 
+.pagination-item {
+  margin-right: 8px;
+}
+
 .pagination-link {
   display: block;
-}
-
-.pagination-item {
-  margin-right: 4px;
-}
-
-.pagination-link {
   text-decoration: none;
   color: #FFFFFF;
   min-height: 60px;
@@ -781,6 +775,7 @@ justify-content: space-between;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
+  padding-top: 12px;
 }
 
 .pagination-current {
@@ -794,6 +789,7 @@ justify-content: space-between;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  padding-top: 12px;
 }
 
 
