@@ -121,12 +121,15 @@
               </ul>
             </fieldset>
 
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group conteol">
               <legend class="catalog-filter-title">Стоимость,Р:</legend>
-              От
-              <input class="conteol-input-min" type="number" name="min-price" value="0">
-              До
-              <input class="conteol-input-max" type="number" name="min-price" value="9000">
+              <div class="range-wrapper-inputs">
+              <label class="catalog-filter-label">От
+              <input class="conteol-input-min" type="number" name="min-price" id="from" value="0">
+              </label>
+              <label class="catalog-filter-label">До
+              <input class="conteol-input-max" type="number" name="min-price" id="until" value="9000">
+              </label>
               <input class="conteol-input" type="range" name="price-range">
             </fieldset>
             <div class="filter-button-wrapper">
@@ -288,7 +291,7 @@
       <footer class="catalog-footer" data-test="footer">
         <section class="newsletter">
           <h2 class="catalog-footer-title">Подпишитесь на рассылку</h2>
-          <p class="catalog-footer-description">Только полезная информация и никаого спама, честное бойскаутское</p>
+          <p class="catalog-footer-description">Только полезная информация и никаого спама,<br>честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-email">Email</label>
             <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
