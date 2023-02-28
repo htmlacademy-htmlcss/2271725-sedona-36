@@ -44,7 +44,7 @@
               </a>
             </li>
           </ul>
-          <button class="wish-button">Хочу сюда!</button>
+          <button class="wish-button brown-button">Хочу сюда!</button>
         </nav>
       </header>
 
@@ -139,7 +139,7 @@
           <h2 class="services-big-title">Заинтересовались?</h2>
           <p class="services-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
             гостиниц в Седоне</p>
-          <button class="services-button">Поиск гостиницы в Седоне</button>
+          <button class="services-button brown-button">Поиск гостиницы в Седоне</button>
         </section>
       </main>
 
@@ -150,9 +150,9 @@
           <p class="page-footer-text">Только полезная информация и никаого спама,<br>честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-email">Email</label>
-            <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
+            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email"
               id="newsletter-email" required>
-            <button class="button footer-button" type="submit">Подписаться</button>
+            <button class="button footer-button blue-button" type="submit">Подписаться</button>
           </form>
         </section>
         <div class="footer-site">
@@ -203,6 +203,35 @@
       </footer>
     </div>
 
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск Гостиницы в Седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="" for="auth-login">Дата заезда:</label>
+              <input class="auth-form-field field" type="text" id="auth-login" name="auth-login" value="">
+            </p>
+            <p class="field-group">
+              <label class="" for="auth-login">Дата выезда:</label>
+              <input class="auth-form-field field" type="text" id="auth-password" name="auth-login" value="Логин">
+            </p>
+            <p class="field-group">
+              <label class="" for="auth-login">Взрослые:</label>
+              <input class="auth-form-field adults" type="text" id="auth-login" name="auth-login" value="2">
+            </p>
+            <p class="field-group">
+              <label class="" for="auth-login">Дети:</label>
+              <input class="auth-form-field children" type="text" id="auth-password" name="auth-login" value="2">
+            </p>
+            <button class="auth-form-button blue-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 
 </html>
