@@ -211,22 +211,55 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск Гостиницы в Седоне</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="field-group">
-              <label class="" for="auth-login">Дата заезда:</label>
-              <input class="auth-form-field field" type="text" id="auth-login" name="auth-login" value="">
-            </p>
-            <p class="field-group">
-              <label class="" for="auth-login">Дата выезда:</label>
-              <input class="auth-form-field field" type="text" id="auth-password" name="auth-login" value="Логин">
-            </p>
-            <p class="field-group">
-              <label class="" for="auth-login">Взрослые:</label>
-              <input class="auth-form-field adults" type="text" id="auth-login" name="auth-login" value="2">
-            </p>
-            <p class="field-group">
-              <label class="" for="auth-login">Дети:</label>
-              <input class="auth-form-field children" type="text" id="auth-password" name="auth-login" value="2">
-            </p>
+            <div class="field-group">
+              <label class="data-field" for="auth-login">Дата заезда:</label>
+              <div class="field-wrapper-big">
+                <input class="auth-form-field field-calendar" type="text" id="data-in" name="data-in" value="27 апреля 2020" placeholder="Укажите дату">
+                <button class="button-date" type="button">
+                  <span class="visually-hidden">Календарик</span>
+                 </button>
+                 <span class="text-form-error">Мы не можем отправить вас в прошлое.</span>
+              </div>
+            </div>
+            <div class="field-group">
+              <label class="data-field" for="auth-login">Дата выезда:</label>
+              <div class="field-wrapper-big">
+              <input class="auth-form-field field-calendar" type="text" id="data-out" name="data-out" value="1 сентября 2021" placeholder="Укажите дату">
+              <button class="button-date" type="button">
+               <span class="visually-hidden">Календарик</span>
+              </button>
+              <span class="text-form-warning">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+            </div>
+            <div class="field-group-wrapper">
+              <div class="field-group adults-group">
+                <label class="data-field adult-children" for="adults">Взрослые:</label>
+                <div class="field-wrapper">
+                  <button class="adults-plus signs" type="button">-</button>
+                  <input class="auth-form-field adults" type="number" id="adults" name="adults" value="2">
+                  <button class="adults-plus signs" type="button">+</button>
+                </div>
+              </div>
+              <div class="field-group children-group">
+                <span class="form-label">
+                <label class="data-field adult-children" for="children">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">
+                    <svg class="tooltip-icon" width="3" height="12" viewBox="0 0 3 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.393066 0H2.39307V2H0.393066V0ZM2.39307 12H0.393066V3H2.39307V12Z" fill="black"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+                </span>
+              </span>
+                <div class="field-wrapper">
+                <button class="children-minus signs" type="button">-</button>
+                <input class="auth-form-field children" type="number" id="children" name="children" value="2">
+                <button class="children-minus signs" type="button">+</button>
+                </div>
+              </div>
+            </div>
             <button class="auth-form-button blue-button" type="submit">Найти</button>
           </form>
         </section>
