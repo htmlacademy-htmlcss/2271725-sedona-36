@@ -1477,8 +1477,6 @@ align-items: center;
 }
 
 .field-calendar:hover {
-  color: #000000;
-  opacity: 0.6;
   background: #E6E6E6;
 }
 
@@ -1522,10 +1520,14 @@ align-items: center;
   height: 20px;
   top: 14px;
   border: 0;
+  color:#756157;
+  opacity:0.3;
+  padding: 0;
 }
 
 .signs:hover {
   color: #000000;
+  opacity: 1;
 }
 
 .signs:active {
@@ -1539,10 +1541,20 @@ align-items: center;
 
 .minus {
   left: 10px;
-  top: 11px;
+  top: 14px;
   }
 
+.plus svg {
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  }
 
+.minus svg {
+  position: absolute;
+  top: 8px;
+  left: 1px;
+}
 
   .tooltip {
   position: relative;
@@ -1601,4 +1613,8 @@ align-items: center;
   .tooltip-toggle:hover + .tooltip-text,
   .tooltip-toggle:focus + .tooltip-text {
     display: block;
+}
+
+.modal-container-close {
+  display: none;
 }
