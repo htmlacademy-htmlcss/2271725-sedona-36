@@ -215,7 +215,7 @@ body {
   height: 485px;
   background-repeat: no-repeat, no-repeat;
   text-align: center;
-  padding: 60px;
+  padding: 52px 60px 60px 60px;
 }
 
 
@@ -247,6 +247,9 @@ body {
 
 /* advantages */
 
+.advantages {
+  padding-top: 69px;
+}
 
 .advantages-big-title,
 .services-big-title {
@@ -257,11 +260,12 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
+  padding: 0 140px;
 }
 
 
 .advantages-big-title {
-  margin-top: 69px;
+  margin-top: 0;
   margin-bottom: 25px;
 }
 
@@ -334,6 +338,7 @@ body {
 .advantages-description-small,
 .services-description-small {
   color: #333333;
+  margin-bottom: 0;
 }
 
 .advantages-text,
@@ -343,6 +348,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  padding: 0 140px;
 }
 
 
@@ -396,6 +402,9 @@ body {
 
 /* Services*/
 
+.services {
+  padding-top: 64px;
+}
 
 .services-list {
   list-style-type: none;
@@ -404,6 +413,7 @@ body {
   padding: 0;
   width: 100%;
   flex-wrap: wrap;
+  margin: 0;
 }
 
 
@@ -420,7 +430,7 @@ body {
 }
 
 .titles {
-  margin-top: 64px;
+  margin-top: 0;
 }
 
 .services-item-housing,
@@ -433,7 +443,7 @@ body {
 }
 
 .services-item {
-  padding: 85px 81px 85px 81px;
+  padding: 81px 85px 81px 85px;
   color: #000000;
   width: 400px;
   min-height: 385px;
@@ -445,7 +455,7 @@ body {
 
 
 .services-interested {
-  padding: 96px 304px 96px 304px;
+  padding: 94px 304px 96px 304px;
 }
 
 
@@ -460,15 +470,16 @@ body {
   border: none;
   text-transform: uppercase;
   border-radius: 4px;
-  margin-bottom: 96px;
+  margin-bottom: 0;
 }
 
 .services-titles {
-  margin-top: 96px;
+  margin-top: 0;
 }
 
 .services-desc {
   margin-bottom: 54px;
+  padding: 0 6px
 }
 
 
@@ -485,6 +496,8 @@ body {
 
 .page-footer-text {
   margin-bottom: 54px;
+  margin-top: 0;
+  padding: 0 10px;
 }
 
 .catalog-button {
@@ -503,8 +516,9 @@ body {
 
 .newsletter-background {
   background-image: url("../images/subscribe.jpg");
-  background-size: 100% auto;
+  background-size:cover;
   background-repeat: no-repeat;
+  background-color: #82B3D3;
 }
 
 .page-footer a {
@@ -518,6 +532,9 @@ body {
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
+  padding: 0 140px;
+  margin-top: 0;
+  margin-bottom: 19px;
 }
 
 .newsletter-form {
@@ -599,6 +616,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 40px 70px 30px 70px;
+  align-items: center;
 }
 
 
@@ -630,12 +648,12 @@ body {
   fill-opacity: 0.3;
 }
 
-.htmlacademy-logo:hover path {
+.htmlacademy-link:hover path {
   fill: #756157;
 }
 
-.htmlacademy-logo:active {
-  color: rgba(117, 97, 87, 0.3);
+.htmlacademy-link:active path{
+  fill: rgba(117, 97, 87, 0.3);
 
 }
 
@@ -647,7 +665,7 @@ body {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
-  margin-top: 35px;
+  margin-top: 0;
   margin-bottom: 8px;
 }
 
@@ -1096,7 +1114,9 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 4px;
 }
 
-
+.hotel-card-price {
+  text-align: right;
+}
 
 .hotel-stars {
   width: 42px;
@@ -1361,7 +1381,7 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: #F2F2F2;
   ;
   border: none;
-  background-image: url("../images/close.svg");
+  background-image: url("../images/modal-window/close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1435,6 +1455,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 20px;
   line-height: 24px;
   color: #000000;
+  text-transform: capitalize;
 }
 
 .form-label {
@@ -1459,7 +1480,7 @@ input[type="number"]::-webkit-inner-spin-button {
   top: 14px;
   left: 400px;
   border: none;
-  background-image: url(../images/calendar.svg);
+  background-image: url(../images/modal-window/calendar.svg);
   background-repeat: no-repeat;
   background-color: transparent;
   opacity: 0.3;
@@ -1624,7 +1645,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .tooltip-text:after {
   content: '';
-  background-image: url("../images/triangle.svg");
+  background-image: url("../images/modal-window/triangle.svg");
   width: 19px;
   height: 9px;
   position: absolute;
