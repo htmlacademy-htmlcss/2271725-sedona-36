@@ -302,7 +302,7 @@ body {
 }
 
 .subject {
-  margin-top: 64px;
+  margin-bottom: 90px;
 }
 
 .services-subject {
@@ -417,6 +417,10 @@ body {
 .services-title {
   margin-top: 0;
   margin-bottom: 30px;
+}
+
+.titles {
+  margin-top: 64px;
 }
 
 .services-item-housing,
