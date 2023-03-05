@@ -287,6 +287,7 @@ body {
   width: 100%;
   flex-wrap: wrap;
   text-align: center;
+  margin: 0;
 }
 
 .advantages-title,
@@ -688,7 +689,7 @@ body {
 
 .product-catalog {
   display: flex;
-  padding: 40px 70px 40px 70px;
+  padding: 18px 70px 40px 70px;
 }
 
 .hotels-fond {
@@ -719,7 +720,7 @@ body {
   appearance: none;
   background-image: url(../images/catalog/arroww.svg);
   background-repeat: no-repeat;
-  margin-right: 70px;
+  margin-right: 63px;
   border: 2px solid #E5E5E5;
   padding: 0 40px 0 20px;
   background-position: right 18px top 19px;
@@ -819,6 +820,7 @@ body {
   margin-right: 70px;
   margin-bottom: 40px;
   padding-left: 0;
+  margin-top: 0;
 }
 
 .element-style {
@@ -836,8 +838,8 @@ body {
 
 .breadcrumbs-item {
   position: relative;
-  padding-right: 21px;
-  margin-right: 10px;
+  padding-right: 28px;
+  margin-right: 0;
   margin-left: 0;
 }
 
@@ -852,6 +854,7 @@ body {
   position: absolute;
   right: 0;
   top: 0;
+  padding-left: 18px;
 }
 
 .breadcrumbs-link:hover {
@@ -898,7 +901,8 @@ body {
   padding: 0;
   border: 0;
   width: 150px;
-  margin-right: 70px;
+  margin-right: 0;
+  padding-right: 66px;
 }
 
 
@@ -923,6 +927,7 @@ body {
 .range-wrapper-inputs {
   display: flex;
   justify-content: space-between;
+  padding: 2px 3px;
 }
 
 .catalog-filter-label {
@@ -954,8 +959,8 @@ body {
 .conteol {
   border: 0;
   margin: 0;
-  padding: 0;
   width: 288px;
+  padding: 0 72px;
 }
 
 .conteol-input-min {
@@ -1085,7 +1090,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .hotel-title {
-  margin-bottom: 16px;
+  margin-bottom: 0;
+  margin-top: 9px;
   width: 100%;
   font-size: 24px;
   line-height: 28px;
@@ -1198,6 +1204,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .catalog-footer-description {
   color: #333333;
+  padding: 0 40px;
 }
 
 
@@ -1212,6 +1219,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+  padding: 0 140px;
 }
 
 
