@@ -611,12 +611,14 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-left: 1px;
+  margin-top: 0;
 }
 
 .footer-site {
   display: flex;
   justify-content: space-between;
-  padding: 40px 70px 30px 70px;
+  padding: 44px 70px 30px 70px;
   align-items: center;
 }
 
@@ -638,6 +640,11 @@ body {
   margin: auto;
   fill: #000000;
   position: absolute;
+}
+
+.footer-contacts-address-phone {
+  padding: 0 12px 2px 12px;
+  margin-left: 2px;
 }
 
 .footer-social-link:hover path {
@@ -678,18 +685,20 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
-  padding: 35px 70px 70px;
+  padding: 35px 70px 38px;
 }
 
 
 
 /* catalog - product  */
 
-
+.main-inner {
+padding-bottom: 40px;
+}
 
 .product-catalog {
   display: flex;
-  padding: 18px 70px 40px 70px;
+  padding: 50px 70px 40px 70px;
 }
 
 .hotels-fond {
@@ -872,6 +881,7 @@ body {
   line-height: 24px;
   font-weight: 700;
   margin-bottom: 32px;
+  padding: 0;
 }
 
 
@@ -900,9 +910,8 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  width: 150px;
   margin-right: 0;
-  padding-right: 66px;
+  padding-right: 71px;
 }
 
 
@@ -927,7 +936,7 @@ body {
 .range-wrapper-inputs {
   display: flex;
   justify-content: space-between;
-  padding: 2px 3px;
+  width: 288px;
 }
 
 .catalog-filter-label {
@@ -959,8 +968,7 @@ body {
 .conteol {
   border: 0;
   margin: 0;
-  width: 288px;
-  padding: 0 72px;
+  padding: 0 67px 0 78px;
 }
 
 .conteol-input-min {
@@ -984,7 +992,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .range-scale {
   position: relative;
   height: 4px;
-  margin-top: 36px;
+  margin-top: 44px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1090,8 +1098,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .hotel-title {
-  margin-bottom: 0;
-  margin-top: 9px;
+  margin-bottom: 17px;
+  margin-top: 10px;
   width: 100%;
   font-size: 24px;
   line-height: 28px;
@@ -1106,6 +1114,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: 400;
   color: #333333;
   margin-bottom: 16px;
+  margin-top: 0;
 }
 
 
@@ -1138,7 +1147,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 
 .hotel-stars-three {
-  width: 70px;
+  width: 66px;
 }
 
 .hotel-stars-two {
@@ -1170,7 +1179,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 20px;
   line-height: 36px;
   text-align: center;
-  padding-top: 12px;
+  padding-top: 9px;
 }
 
 .pagination-current {
@@ -1205,6 +1214,9 @@ input[type="number"]::-webkit-inner-spin-button {
 .catalog-footer-description {
   color: #333333;
   padding: 0 40px;
+  margin-top: 0;
+  margin-bottom: 55px;
+  margin-left: 2px;
 }
 
 
@@ -1220,6 +1232,8 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #000000;
   text-transform: uppercase;
   padding: 0 140px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 
