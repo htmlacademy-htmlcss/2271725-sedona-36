@@ -608,7 +608,7 @@ body {
 }
 
 .footer-social-link:hover path {
-  fill: #68A2CA
+  fill: #68A2CA;
 }
 
 .footer-social-link:active path {
@@ -661,7 +661,7 @@ body {
   color: #000000;
   text-transform: uppercase;
   margin: 0;
-  align-self: center
+  align-self: center;
 }
 
 .select {
@@ -1083,7 +1083,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .hotel-stars-two {
-  width: 42px
+  width: 42px;
 }
 
 /* pagination */
@@ -1195,7 +1195,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .brown-button:disabled {
   background-color: #E5E5E5;
-  color: #FFFFFF
+  color: #FFFFFF;
 }
 
 .green-button {
