@@ -387,11 +387,22 @@ body {
   margin: 0;
 }
 
-.services-icon {
-  position: absolute;
-  top: 79px;
-  left: 50%;
-  transform: translateX(-50%);
+.services-item-housing {
+  background-image: url(../images/housing.svg);
+  background-repeat: no-repeat;
+  background-position: center top 79px;
+}
+
+.services-item-food {
+  background-image: url(../images/hamburger.svg);
+  background-repeat: no-repeat;
+  background-position: center top 79px;
+}
+
+.services-item-souvenirs {
+  background-image: url(../images/suvenir.svg);
+  background-repeat: no-repeat;
+  background-position: center top 79px;
 }
 
 .services-title {
