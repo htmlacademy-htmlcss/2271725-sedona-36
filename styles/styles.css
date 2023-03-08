@@ -162,22 +162,23 @@ body {
   width: 160px;
 }
 
-.navigation-icon {
-  list-style-type: none;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  fill: #000000;
-  position: absolute;
+.secondary-navigation-search {
+  width: 44px;
+  height: 64px;
+  display: block;
+  background-image: url(../images/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.secondary-navigation-link {
+.secondary-navigation-hearth {
   width: 44px;
   height: 64px;
   display: block;
   position: relative;
+  background-image: url(../images/heart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .notification-badge {
@@ -197,7 +198,8 @@ body {
 .hero {
   background-image: url("../images/icon-zigzag.svg"), url("../images/background.jpg");
   background-size: 100% auto, 100% auto;
-  background-position: left 0 bottom 1px;
+  background-position: left 0 bottom 0;
+  background-color: #F2F2F2;
   height: 485px;
   background-repeat: no-repeat, no-repeat;
   text-align: center;
@@ -209,7 +211,6 @@ body {
 *::after {
   box-sizing: border-box;
 }
-
 
 .main-index {
   color: #000000;
@@ -921,12 +922,6 @@ body {
   width: 287px;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 .range-scale {
   position: relative;
   height: 4px;
@@ -1424,13 +1419,6 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-right: 10px;
 }
 
-input[type="number"],
-input[type="number"]:hover,
-input[type="number"]:focus {
-  appearance: none;
-  -moz-appearance: textfield;
-}
-
 .button-date {
   width: 20px;
   height: 20px;
@@ -1615,6 +1603,16 @@ input[type="number"]:focus {
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
+}
+
+.range input[type="number"],
+.range input[type="number"]:hover,
+.range input[type="number"]:focus,
+.modal input[type="number"],
+.modal input[type="number"]:hover,
+.modal input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
 }
 
 .modal-container-close {
