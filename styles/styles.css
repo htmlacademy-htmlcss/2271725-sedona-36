@@ -1605,6 +1605,16 @@ body {
   display: block;
 }
 
+.range input[type="number"],
+.range input[type="number"]:hover,
+.range input[type="number"]:focus,
+.modal input[type="number"],
+.modal input[type="number"]:hover,
+.modal input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
 .range input::-webkit-outer-spin-button,
 .range input::-webkit-inner-spin-button,
 .modal input::-webkit-outer-spin-button,
